@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/shot.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/game/game.js"></script>
+    <script src="js/game/GameHandler.js"></script>
+    <script src="js/Canvas.js"></script>
+
+    
+</head>
+
+<body>
+    
+    <div class="menu">
+        <div class="menu-item" data-content="EsseContent">Эссе</div>
+        <div class="menu-item" data-content="shotContent">Выстрел</div>
+        <div class="menu-item" data-content="shoterContent">Пулемёт</div>
+        <div class="menu-item" data-content="rootsContent">Корни уравнений</div>
+        <div class="menu-item" data-content="RPGContent">РПГ</div>
+        <div class="menu-item" data-content="GraphicContent">График</div>
+
+    </div>
+    <div class="content-item hide" id="EsseContent" style="margin-top:50px ;">
+            <div id="a11" class="par">
+                <p>
+                    <h3 style="margin-top: 20px; color:#B65EBA ; background-color: bisque;width: fit-content;">Кто я?</h3></br>
+                   Здравствуйте,Разан Али, и я иностранная студентка, в Удмуртском государственном университете, 
+                    <h3 style="margin-top: 20px; color:#B65EBA ; background-color: bisque;width: fit-content;">почему я выбрала этот факультет и это место для учебы?</h3></br>
+                     Ну, я пытался изучать медицину раньше, но я не нашла это интересным, и я была немного заинтересована</br> в веб-сайтах и программировании,поэтому я решила учиться на этой подаче также потому, что зарплата программистов</br> довольно хорошая, 
+                    и для вопроса об университете, просто я решила остаться в нем, потому что мне здесь комфортно.
+                  
+                </p>
+
+                    
+            </div>
+    </div>
+    <div class="content-item hide" id="shotContent">
+        <input id="x">
+        <input id="y">
+        <button id="shot">Начнем?</button>
+        <span id="result"></span>
+    </div>
+    <div class="content-item hide" id="shoterContent">
+        <input id="count">
+        <input id="max">
+        <input id="min">
+        <button id="shoter">Начнем?</button>
+        <span id="resultate"></span>
+    </div>
+    <div class="content-item hide" id="rootsContent">
+        <h1>Корни уравнений</h1>
+        <div>
+            <input id="a">
+            <input id="b">
+            <input id="c">
+            <input id="d">
+            <input id="e">
+            <button id="getRoots">Найти корни</button>
+        </div>
+        
+    </div>
+    <div class="content-item hide" id="RPGContent">
+        <h2 id="question-title"></h2>
+        <img id="question-image" width="600px">
+        <p id="question-description"></p>
+        <div id="question-asks"></div>
+       
+    </div>
+    <div class="content-item" id="GraphicContent">
+        <h1  style="text-align: center; color:#B65EBA;margin-bottom: 10px;">Графики</h1>
+        
+    <div>
+
+        <canvas id="graph"></canvas>
+    </div>
+    </div>
+    
+</body>
+
+</html>
